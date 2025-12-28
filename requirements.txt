@@ -4,3 +4,4 @@ python-dotenv==1.2.1
 python-jose==3.5.0
 passlib==1.7.4
 motor==3.7.1
+bcrypt==5.0.0

@@ -10,3 +10,16 @@ class User(BaseModel):
     role: str   # admin / candidate
     is_active: bool = True
     created_at: datetime = datetime.utcnow()
+
+class UserCreate(BaseModel):
+    name: str
+    email: EmailStr
+    password: str
+    role: str
+
+class UserInDB(BaseModel):
+    name: str
+    email: EmailStr
+    password: str
+    role: str
+    created_at: datetime
